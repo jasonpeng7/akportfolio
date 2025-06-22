@@ -19,7 +19,7 @@ export default function RootLayout({
         <Navbar />
         <Sidenav />
         <main className="pt-16 md:ml-64 transition-all duration-300 ease-in-out">
-          <div className="p-4 sm:p-6 lg:p-8">{children}</div>
+          <div className="p-2 sm:p-4 lg:p-6">{children}</div>
         </main>
       </body>
     </html>
