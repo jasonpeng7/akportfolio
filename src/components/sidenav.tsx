@@ -10,7 +10,6 @@ const Sidenav = () => {
 
   const links = [
     { href: "/pages/about", label: "About" },
-    { href: "/pages/experience", label: "Experience" },
     { href: "/pages/projects", label: "Projects" },
     { href: "/pages/contact", label: "More Contact" },
   ];

@@ -11,7 +11,8 @@ export default function Navbar() {
         <div className="flex items-end justify-between h-16 pb-2">
           <div className="flex-shrink-0">
             <p className="text-xl lato-bold text-primary-navy">
-              Atharva Kharwadkar
+              <span className="text-3xl">A</span>tharva{" "}
+              <span className="text-3xl">K</span>harwadkar
             </p>
           </div>
           <div className="hidden md:flex items-center space-x-4 lato-thin">
