@@ -24,21 +24,6 @@ const projectData = [
         slug: "",
         imageUrl: "/filler.jpg",
       },
-      {
-        name: "Part 2",
-        slug: "",
-        imageUrl: "/filler.jpg",
-      },
-      {
-        name: "Part 3",
-        slug: "",
-        imageUrl: "/filler.jpg",
-      },
-      {
-        name: "Part 4",
-        slug: "",
-        imageUrl: "/filler.jpg",
-      },
     ],
   },
   {
@@ -46,16 +31,6 @@ const projectData = [
     parts: [
       {
         name: "Part 1",
-        slug: "",
-        imageUrl: "/filler.jpg",
-      },
-      {
-        name: "Part 2",
-        slug: "",
-        imageUrl: "/filler.jpg",
-      },
-      {
-        name: "Part 3",
         slug: "",
         imageUrl: "/filler.jpg",
       },
@@ -69,11 +44,6 @@ const projectData = [
         slug: "",
         imageUrl: "/filler.jpg",
       },
-      {
-        name: "Part 2",
-        slug: "",
-        imageUrl: "/filler.jpg",
-      },
     ],
   },
   {
@@ -81,16 +51,6 @@ const projectData = [
     parts: [
       {
         name: "Part 1",
-        slug: "",
-        imageUrl: "/filler.jpg",
-      },
-      {
-        name: "Part 2",
-        slug: "",
-        imageUrl: "/filler.jpg",
-      },
-      {
-        name: "Part 3",
         slug: "",
         imageUrl: "/filler.jpg",
       },
