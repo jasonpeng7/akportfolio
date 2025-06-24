@@ -6,11 +6,11 @@ import ExperienceList from "@/components/ExperienceStack";
 
 export default function AboutPage() {
   return (
-    <main className="flex flex-col items-center">
-      <div className="flex flex-col p-4 sm:p-6 lg:p-8 mb-[15px] max-w-[800px]">
+    <div className="flex flex-col items-center w-full min-w-[350px]">
+      <div className="flex flex-col p-4 sm:p-6 lg:p-8 mb-[15px] w-full max-w-[800px]">
         <div className="flex flex-col lg:flex-row gap-y-8 lg:gap-x-8 items-center lg:items-start justify-center">
           <div className="lg:pr-8 lg:border-r-2 lg:border-primary-gold">
-            <div className="relative w-52 h-52 sm:w-64 sm:h-64 md:w-64 md:h-64">
+            <div className="relative w-52 h-52 sm:w-64 sm:h-64">
               <Image
                 src="/atharva.png"
                 alt="Atharva Kharwadkar"
@@ -21,7 +21,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="max-w-[300px] md:max-w-[400px] min-h-64 text-center lg:text-left  flex flex-col">
+          <div className="w-full text-center lg:text-left flex flex-col">
             <div className="flex-1">
               <h1 className="poppins-bold text-4xl text-primary-navy mb-4">
                 Hi, I&apos;m Atharva.
@@ -46,6 +46,6 @@ export default function AboutPage() {
         </div>
       </div>
       <ExperienceList />
-    </main>
+    </div>
   );
 }
