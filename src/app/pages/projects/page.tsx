@@ -9,9 +9,9 @@ const allProjects = [
 
 export default function ProjectsPage() {
   return (
-    <div>
-      <h1 className="text-4xl lato-regular tracking-tight text-primary-navy mb-8">
-        Projects
+    <div className="">
+      <h1 className="w-fit poppins-semibold text-primary-grey uppercase tracking-regular mt-0 mb-1 border-b-1 pb-1 border-primary-grey">
+        All Projects
       </h1>
       <div className="grid grid-cols-1 sm:flex sm:flex-row gap-6">
         {allProjects.map((project) => (
