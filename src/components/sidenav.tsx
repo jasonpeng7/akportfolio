@@ -49,11 +49,11 @@ const Sidenav = () => {
       </button>
 
       <aside
-        className={`fixed top-16 left-0 h-[calc(100vh-4rem)] w-64 bg-white border-r border-primary-grey z-40 transform ${
+        className={`fixed top-20 left-0 h-[calc(100vh-5rem)] w-64 bg-white border-r border-primary-grey z-40 transform ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } md:translate-x-0 transition-transform duration-300 ease-in-out`}
       >
-        <div className="pt-2 px-2 lg:px-4 h-full">
+        <div className="p-4 h-full">
           <h2 className="poppins-semibold text-primary-grey uppercase tracking-regular mb-1 border-b-1 pb-1 border-primary-grey">
             Choose a category
           </h2>

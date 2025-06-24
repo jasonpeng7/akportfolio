@@ -6,9 +6,9 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white z-50 border-b-2 border-primary-gold">
-      <div className="max-w-8xl mx-auto px-2 lg:px-4">
-        <div className="flex items-end justify-between h-16 pb-2">
+    <nav className="fixed top-0 left-0 w-full bg-white z-50 border-b-2 border-primary-gold ">
+      <div className="max-w-8xl mx-auto px-4">
+        <div className="flex items-end justify-between h-20 pb-2">
           <div className="flex-shrink-0">
             <p className="text-3xl poppins-bold text-primary-navy tracking-tighter uppercase">
               <span className="text-3xl">A</span>
