@@ -10,22 +10,32 @@ export default function Navbar() {
       <div className="max-w-8xl mx-auto px-2 lg:px-4">
         <div className="flex items-end justify-between h-16 pb-2">
           <div className="flex-shrink-0">
-            <p className="text-xl lato-bold text-primary-navy">
-              <span className="text-3xl">A</span>tharva{" "}
-              <span className="text-3xl">K</span>harwadkar
+            <p className="text-3xl poppins-bold text-primary-navy tracking-tighter uppercase">
+              <span className="text-3xl">A</span>
+              <span className="text-2xl">tharva</span>{" "}
+              <span className="text-3xl">K</span>
+              <span className="text-2xl">harwadkar</span>
             </p>
           </div>
-          <div className="hidden md:flex items-center space-x-4 lato-thin">
-            <a href="tel:+911234567890" className="text-primary-navy ">
-              (000) 000-0000
-            </a>
-            <span className="text-primary-blue">|</span>
-            <a
-              href="mailto:atharva.kharwadkar@example.com"
-              className="text-primary-navy "
-            >
-              Email me
-            </a>
+          <div className="hidden md:flex flex-col items-end">
+            <div className="flex items-center space-x-4">
+              <a
+                href="tel:+14156881534"
+                className="text-primary-grey poppins-light text-xs"
+              >
+                (415) 688-1534
+              </a>
+              <span className="text-primary-grey text-xs poppins-light">|</span>
+              <a
+                href="mailto:atharva.kharwadkar@example.com"
+                className="text-primary-grey poppins-light text-xs"
+              >
+                Email me
+              </a>
+            </div>
+            <h3 className="poppins-semibold text-primary-navy text-sm uppercase tracking-wider mb-1">
+              Contact Me
+            </h3>
           </div>
           <div className="md:hidden flex items-center">
             <button
