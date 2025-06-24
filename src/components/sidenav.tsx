@@ -12,7 +12,6 @@ const Sidenav = () => {
   const links = [
     { href: "/pages/about", label: "About" },
     { href: "/pages/projects", label: "Projects" },
-    { href: "/pages/contact", label: "More Contact" },
   ];
 
   return (
@@ -47,20 +46,20 @@ const Sidenav = () => {
           isOpen ? "translate-x-0" : "-translate-x-full"
         } md:translate-x-0 transition-transform duration-300 ease-in-out`}
       >
-        <div className="pt-6 px-2 lg:px-4 h-full">
-          <h2 className="text-sm lato-regular text-primary-navy uppercase tracking-wider mb-4 border-b-2 pb-6 border-primary-grey">
+        <div className="pt-2 px-2 lg:px-4 h-full">
+          <h2 className="poppins-semibold text-primary-grey uppercase tracking-regular mb-1 border-b-1 pb-1 border-primary-grey">
             Choose a category
           </h2>
           <nav>
             <ul>
               {links.map((link) => (
-                <li key={link.href} className="mb-2">
+                <li key={link.href}>
                   <Link
                     href={link.href}
-                    className={`lato-thin block py-2 rounded-md transition duration-200 text-base ${
+                    className={`block py-1 transition duration-200 text-sm tracking-tight hover:bg-amber-200 hover:text-black ${
                       pathname === link.href
-                        ? "text-primary-gold "
-                        : "text-primary-navy hover:text-light-blue"
+                        ? "text-primary-grey font-semibold"
+                        : "text-primary-grey font-thin"
                     }`}
                   >
                     {link.label}
