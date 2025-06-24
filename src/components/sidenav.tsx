@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const Sidenav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,35 +26,19 @@ const Sidenav = () => {
         aria-label="Toggle sidenav"
       >
         {isOpen ? (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M15 19l-7-7 7-7"
-            />
-          </svg>
+          <Image
+            src="/sidenav-left.svg"
+            alt="sidenav-left"
+            width={24}
+            height={24}
+          />
         ) : (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M9 5l7 7-7 7"
-            />
-          </svg>
+          <Image
+            src="/sidenav-right.svg"
+            alt="sidenav-right"
+            width={24}
+            height={24}
+          />
         )}
       </button>
 
