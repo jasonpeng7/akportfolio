@@ -22,7 +22,7 @@ export default function ExperienceList() {
       companyName: "Company3",
       title: "Role",
       startDate: "August 2023",
-      description: "Worked on...",
+      description: "Worked on... ",
     },
   ];
 
