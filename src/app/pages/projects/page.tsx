@@ -1,61 +1,10 @@
-import ProjectCategory from "@/components/ProjectCategory";
+import ProjectCard from "@/components/ProjectCard";
 
-/* 
-***enter project data here***
-example:
-  {
-    category: "Name of Project",
-    parts: [
-      {
-        name: "name of part",
-        slug: "this is the link to the part.... MAKE SURE SLUGS ARE UNIQUE",
-        imageUrl: "this is the image of the part, add relevant images to public folder",
-      },
-     ***add more if needed***
-    ],
-  },
-*/
-const projectData = [
-  {
-    category: "Type of Projects #1: Prototypes",
-    parts: [
-      {
-        name: "Part 1",
-        slug: "",
-        imageUrl: "/filler.jpg",
-      },
-    ],
-  },
-  {
-    category: "Type of Projects #2: Designs",
-    parts: [
-      {
-        name: "Part 1",
-        slug: "",
-        imageUrl: "/filler.jpg",
-      },
-    ],
-  },
-  {
-    category: "Type of Projects #3: Machining",
-    parts: [
-      {
-        name: "Part 1",
-        slug: "",
-        imageUrl: "/filler.jpg",
-      },
-    ],
-  },
-  {
-    category: "Type of Projects #4: Simulations",
-    parts: [
-      {
-        name: "Part 1",
-        slug: "",
-        imageUrl: "/filler.jpg",
-      },
-    ],
-  },
+const allProjects = [
+  { name: "Project1", slug: "test-1", imageUrl: "/filler.jpg" },
+  { name: "Project2", slug: "test-2", imageUrl: "/filler.jpg" },
+  { name: "Project3", slug: "test-3", imageUrl: "/filler.jpg" },
+  { name: "Project4", slug: "test-4", imageUrl: "/filler.jpg" },
 ];
 
 export default function ProjectsPage() {
@@ -64,12 +13,13 @@ export default function ProjectsPage() {
       <h1 className="text-4xl lato-regular tracking-tight text-primary-navy mb-8">
         Projects
       </h1>
-      <div>
-        {projectData.map((category) => (
-          <ProjectCategory
-            key={category.category}
-            title={category.category}
-            parts={category.parts}
+      <div className="grid grid-cols-1 sm:flex sm:flex-row gap-6">
+        {allProjects.map((project) => (
+          <ProjectCard
+            key={project.slug}
+            slug={project.slug}
+            name={project.name}
+            imageUrl={project.imageUrl}
           />
         ))}
       </div>
