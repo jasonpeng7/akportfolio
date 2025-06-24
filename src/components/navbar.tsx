@@ -9,12 +9,12 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 w-full bg-white z-50 border-b-2 border-primary-gold ">
       <div className="max-w-8xl mx-auto px-4">
         <div className="flex items-end justify-between h-20 pb-2">
-          <div className="flex-shrink-0">
-            <p className="text-3xl poppins-bold text-primary-navy tracking-tighter uppercase">
-              <span className="text-3xl">A</span>
-              <span className="text-2xl">tharva</span>{" "}
-              <span className="text-3xl">K</span>
-              <span className="text-2xl">harwadkar</span>
+          <div className="flex-shrink min-w-0">
+            <p className="text-xl sm:text-3xl poppins-bold text-primary-navy tracking-tighter uppercase">
+              <span className="text-2xl sm:text-3xl">A</span>
+              <span className="text-md sm:text-2xl">tharva</span>{" "}
+              <span className="text-2xl sm:text-3xl">K</span>
+              <span className="text-md sm:text-2xl">harwadkar</span>
             </p>
           </div>
           <div className="hidden md:flex flex-col items-end">
@@ -33,11 +33,11 @@ export default function Navbar() {
                 Email me
               </a>
             </div>
-            <h3 className="poppins-semibold text-primary-navy text-sm uppercase tracking-wider mb-1">
+            <h3 className="poppins-semibold text-primary-navy text-sm uppercase tracking-tight mb-1">
               Contact Me
             </h3>
           </div>
-          <div className="md:hidden flex items-center">
+          <div className="md:hidden flex items-center flex-shrink-0">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"

@@ -53,7 +53,7 @@ export default function ExperienceCard({
         </div>
 
         <div className="flex-1 mx-4">
-          <div className="text-dark-navy font-semibold text-sm md:text-md lg:text-lg">
+          <div className="poppins-semibold text-dark-navy text-sm md:text-md lg:text-lg">
             {companyName}
           </div>
           <div className="text-gray-600 text-sm">{title}</div>

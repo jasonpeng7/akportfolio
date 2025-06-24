@@ -54,7 +54,7 @@ const Sidenav = () => {
         } md:translate-x-0 transition-transform duration-300 ease-in-out`}
       >
         <div className="p-4 h-full">
-          <h2 className="poppins-semibold text-primary-grey uppercase tracking-regular mb-1 border-b-1 pb-1 border-primary-grey">
+          <h2 className="poppins-regular text-medium-blue  tracking-regular mb-1 border-b-1 pb-1 border-primary-grey">
             Choose a category
           </h2>
           <nav>
@@ -74,7 +74,7 @@ const Sidenav = () => {
                     <Link
                       href={link.href}
                       className={`block py-1 transition duration-200 text-sm tracking-tight hover:bg-amber-200 hover:text-black text-primary-grey ${
-                        isActive ? "font-semibold" : "font-thin"
+                        isActive ? "font-semibold" : "font-regular"
                       }`}
                     >
                       {link.label}
