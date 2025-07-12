@@ -13,6 +13,9 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Atharva Kharwadkar",
   description: "Personal portfolio for Atharva Kharwadkar",
+  icons: {
+    icon: "/ak_favicon.png",
+  },
 };
 
 export default function RootLayout({
