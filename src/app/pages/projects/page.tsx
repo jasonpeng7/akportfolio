@@ -1,12 +1,5 @@
 import ProjectCard from "@/components/ProjectCard";
-
-const allProjects = [
-  { name: "Project1", slug: "test-1", imageUrl: "/filler.jpg" },
-  { name: "Project2", slug: "test-2", imageUrl: "/filler.jpg" },
-  { name: "Project3", slug: "test-3", imageUrl: "/filler.jpg" },
-  { name: "Project4", slug: "test-4", imageUrl: "/filler.jpg" },
-  // Add more projects here directly
-];
+import { allProjects } from "@/data/projects";
 
 export default function ProjectsPage() {
   return (
@@ -18,7 +11,7 @@ export default function ProjectsPage() {
       </div>
 
       <div className="">
-        <h2 className="text-3xl poppins-semibold text-primary-navy mb-6">
+        <h2 className="text-3xl poppins-semibold text-primary-gold mb-6">
           Dive into my experience
         </h2>
         <div className="flex flex-wrap justify-center gap-8 md:grid md:grid-cols-2 md:gap-x-6 md:gap-y-10 lg:grid-cols-3 xl:grid-cols-4">
