@@ -20,7 +20,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ slug, name, imageUrl }) => {
             className="h-full w-full object-cover object-center aspect-square border border-primary-grey"
           />
         </div>
-        <p className="lato-regular mt-2 block truncate text-sm font-medium text-primary-grey">
+        <p className="mt-2 block poppins-regular text-xs text-center font-medium text-primary-grey">
           {name}
         </p>
       </div>
