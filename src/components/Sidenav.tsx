@@ -17,7 +17,7 @@ const Sidenav = () => {
   const pathname = usePathname();
 
   const links = [
-    { href: "/pages/about", label: "About" },
+    { href: "/", label: "About" },
     { href: "/pages/projects", label: "Projects" },
   ];
 
@@ -60,7 +60,10 @@ const Sidenav = () => {
           <nav>
             <ul>
               {links.map((link) => {
-                const isActive = pathname.startsWith(link.href);
+                const isActive =
+                  link.href === "/"
+                    ? pathname === link.href
+                    : pathname.startsWith(link.href);
                 const isProjectSlugPage =
                   link.href === "/pages/projects" &&
                   pathname.startsWith("/pages/projects/") &&
@@ -73,8 +76,10 @@ const Sidenav = () => {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className={`block py-1 transition duration-200 text-sm tracking-tight hover:bg-amber-200 hover:text-black text-primary-grey ${
-                        isActive ? "font-semibold" : "font-regular"
+                      className={`block py-1 transition duration-200 text-sm tracking-tight hover:text-black ${
+                        isActive
+                          ? "font-semibold text-primary-navy"
+                          : "font-regular text-primary-grey"
                       }`}
                     >
                       {link.label}
