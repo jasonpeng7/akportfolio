@@ -18,7 +18,7 @@ export const allProjects = [
       },
     ],
     slug: "hub-motor-project",
-    imageUrl: "/filler.jpg",
+    imageUrl: "/hub_motor.png",
   },
   {
     name: "(ARMS) NVD1500 DCG 3-axis CNC Mill Servicing",
@@ -39,20 +39,20 @@ export const allProjects = [
       },
     ],
     slug: "arms-nvd1500-dcg-3-axis-cnc-mill-servicing",
-    imageUrl: "/filler.jpg",
+    imageUrl: "/mill-service.png",
   },
   {
     name: "(ARMS) MicroVu Measurement Systems",
     overview:
       "Applying precision measurement techniques in aid of graduate level manufacturing research at ARMS lab.",
     slug: "microvu-measurement-systems",
-    imageUrl: "/filler.jpg",
+    imageUrl: "/microvu.png",
   },
   {
     name: "(FSAE) Machined Parts",
     overview:
       "Applying manual Lathe and Bridgeport Mill manufacturing skills to create steel and aluminum vehicle parts.",
     slug: "machined_parts",
-    imageUrl: "/filler.jpg",
+    imageUrl: "/machined-parts.png",
   },
 ];
