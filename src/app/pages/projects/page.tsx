@@ -12,9 +12,9 @@ export default function ProjectsPage() {
 
       <div className="">
         <h2 className="text-3xl poppins-semibold text-primary-gold mb-6">
-          Dive into my experience
+          Dive into my project experience.
         </h2>
-        <div className="flex flex-wrap justify-center gap-8 md:grid md:grid-cols-2 md:gap-x-6 md:gap-y-10 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="flex flex-wrap justify-center flex-row gap-12 gap-y-[100px] md:grid md:grid-cols-2 md:gap-x-6 md:gap-y-10 lg:grid-cols-3 xl:grid-cols-4">
           {allProjects.map((project) => (
             <ProjectCard
               key={project.slug}

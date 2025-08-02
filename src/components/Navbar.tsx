@@ -23,11 +23,11 @@ export default function Navbar() {
                 href="tel:+14156881534"
                 className="text-primary-grey poppins-light text-xs"
               >
-                (415) 688-1534
+                +1 (415) 688-1534
               </a>
               <span className="text-primary-grey text-xs poppins-light">|</span>
               <a
-                href="mailto:atharva.kharwadkar@example.com"
+                href="mailto:atharva.kharwadkar@outlook.com"
                 className="text-primary-grey poppins-light text-xs"
               >
                 Email me
@@ -86,13 +86,13 @@ export default function Navbar() {
         <div className="md:hidden" id="mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white">
             <a
-              href="tel:+911234567890"
+              href="tel:+14156881534"
               className="text-gray-600 hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium"
             >
-              +91 12345 67890
+              +1 (415) 688-1534
             </a>
             <a
-              href="mailto:atharva.kharwadkar@example.com"
+              href="mailto:atharva.kharwadkar@outlook.com"
               className="text-gray-600 hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium"
             >
               Email me

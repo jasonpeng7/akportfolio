@@ -44,7 +44,9 @@ export default function ProjectPartPage() {
             <h2 className="text-lg sm:text-xl poppins-semibold text-primary-navy mb-2">
               Project Overview
             </h2>
-            <p className="text-base text-gray-600">{project.overview}</p>
+            <p className="text-base text-gray-600 max-w-[150px] sm:max-w-[300px] md:max-w-[500px] lg:max-w-[600px] xl:max-w-[700px]">
+              {project.overview}
+            </p>
           </div>
         </div>
       </div>
@@ -71,7 +73,7 @@ export default function ProjectPartPage() {
                 <h2 className="text-xl poppins-semibold text-primary-navy">
                   {desc.title}
                 </h2>
-                <p className="mt-2 text-gray-600">{desc.text}</p>
+                <p className="mt-2 text-gray-600 ">{desc.text}</p>
               </div>
             ))}
           </div>

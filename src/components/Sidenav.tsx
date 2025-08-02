@@ -26,7 +26,7 @@ const Sidenav = () => {
       {/* mobile view */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`fixed top-1/2 left-0 z-50 md:hidden p-2 bg-gray-700 text-white rounded-r-md transform -translate-y-1/2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500 transition-transform duration-300 ease-in-out ${
+        className={`fixed top-1/2 left-0 z-50 md:hidden p-2 bg-primary-gold text-white rounded-r-md transform -translate-y-1/2 transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-64" : "translate-x-0"
         }`}
         aria-label="Toggle sidenav"
