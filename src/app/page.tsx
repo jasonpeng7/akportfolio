@@ -72,12 +72,12 @@ export default function Home() {
       <footer className="mt-16 text-center text-gray-500 text-sm">
         Built by{" "}
         <a
-          href="https://jasonpe.com"
+          href="https://vbedesign.com"
           target="_blank"
           rel="noopener noreferrer"
           className="text-primary-navy hover:text-primary-gold transition-colors duration-200"
         >
-          Jason Peng
+          Vibe Design
         </a>{" "}
         © {new Date().getFullYear()}
       </footer>
