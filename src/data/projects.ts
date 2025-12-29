@@ -1,5 +1,45 @@
 export const allProjects = [
   {
+    name: "DUEN Fall 2025 Cohort Project",
+    overview: "Computer Vision–Enabled Interactive Tabling Machine",
+    description: [
+      {
+        title: "Mechanical Design (Lead)",
+        text: "Led mechanical design of a portable tabling machine, including chassis layout, access panels, and internal mounting for electronics. Designed for easy transport, maintenance access, and reliable assembly.",
+      },
+      {
+        title: "CAD & Prototyping",
+        text: "Created CAD models for the enclosure, door system, prize wheel, and flyer dispensing mechanism. Iterated across multiple prototypes to resolve tolerance issues, print failures, and assembly constraints.",
+      },
+      {
+        title: "Manufacturing & Materials",
+        text: "Selected PLA for structural panels and PETG for load-bearing and moving components. Optimized print orientation and tolerances to reduce cracking, warping, and reprints.",
+      },
+      {
+        title: "Mechanisms",
+        text: "Designed and implemented a rack-and-pinion flyer dispensing system and motor-driven prize wheel, balancing reliability, simplicity, and space constraints.",
+      },
+      {
+        title: "Integration & Testing",
+        text: "Worked closely with electrical and software teams to integrate motors, wiring paths, camera placement, and emergency shutoff features. Supported mechanical troubleshooting during system testing and demos.",
+      },
+    ],
+    slug: "duen-fall-2025-cohort-project",
+    imageUrl: "/duen_arcade_machine.png",
+    galleryImages: [
+      "/duen_arcade_machine.png",
+      "/duen_finishing_touches.png",
+      "/duen_arty_build.png",
+    ],
+    pdfUrl: [
+      {
+        name: "F25 Tabling Assistance Instruction Manual",
+        url: "duen_pdf1.pdf",
+      },
+      { name: "F25 Final Presentations", url: "duen_pdf2.pdf" },
+    ],
+  },
+  {
     name: "(Personal) Hub Motor Project",
     overview:
       "Transferring interest from electro-mechanical engineering into real world applications.",

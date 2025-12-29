@@ -10,9 +10,9 @@ export default function Home() {
 
   const fullText = {
     section1:
-      "As an engineering intern and undergraduate research assistant, I apply my skills in design and manufacturing to develop innovative solutions. I have experience with CNC machines, CAM, CAD, and FEA from my work at ARMS Lab and Carrier HVAC.",
+      "A dedicated Mechanical Engineering student with practical experience in CNC machining, CAD design, and research applications, complemented by hands-on work with Formula SAE competition projects.",
     section2:
-      "I am also developing an AI-powered tool for automating PMI/3D-CAD to accelerate design processes, demonstrating my interest in leveraging technology to solve engineering challenges. My experience with Formula Racing at UC Davis has further honed my design and manufacturing techniques for electric vehicles.",
+      "I aim to combine technical programming capabilities with my manufacturing and hardware expertise to optimize processes and performance while meeting precise specifications.",
   };
 
   return (
@@ -37,13 +37,14 @@ export default function Home() {
                 Hi, I&apos;m Atharva.
               </h1>
               <p className="poppins-regular text-lg text-medium-blue mb-6 break-words">
-                As an engineering intern and undergraduate researcher, I apply
-                design and manufacturing skills to create practical, innovative
-                solutions.
+                A dedicated Mechanical Engineering student with practical
+                experience in CNC machining, CAD design, and research
+                applications.
               </p>
               <p className="poppins-regular text-lg mb-1 text-medium-blue break-words">
-                I&apos;m also building an AI-powered tool to automate PMI/3D-CAD
-                workflows, streamlining the design process through technology.
+                I aim to combine programming skills with manufacturing and
+                hardware expertise to optimize processes and performance while
+                meeting precise specifications.
               </p>
               <div className="flex justify-center lg:justify-end mb-6">
                 <button
@@ -56,7 +57,7 @@ export default function Home() {
             </div>
             <div className="flex justify-center lg:justify-end mt-auto">
               <Link
-                href="/resume.pdf"
+                href="/resume.docx"
                 className="poppins-semibold inline-block bg-primary-gold text-white font-bold py-3 px-6 rounded-lg hover:bg-yellow-600 transition-colors duration-300 shadow-md"
                 download
               >

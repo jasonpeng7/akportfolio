@@ -4,6 +4,13 @@ import ExperienceCard from "@/components/features/ExperienceCard";
 export default function ExperienceList() {
   const experiences = [
     {
+      logoSrc: "/duen_arty.png",
+      companyName: "Davis Undergraduate Engineering Network",
+      title: "Mechanical Lead",
+      startDate: "September 2025 - Present",
+      description: "",
+    },
+    {
       logoSrc: "/jcockerill.png",
       companyName: "John Cockerill",
       title: "Engineering Intern",
