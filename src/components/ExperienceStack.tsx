@@ -52,7 +52,7 @@ export default function ExperienceList() {
   ];
 
   return (
-    <div className="w-[350px] sm:w-[500px] lg:w-[600px] xl:w-[800px]  mx-auto space-y-[15px] ">
+    <div className="w-full space-y-6">
       {experiences.map((exp, idx) => (
         <ExperienceCard
           key={idx}

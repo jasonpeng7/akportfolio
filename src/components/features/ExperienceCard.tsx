@@ -35,15 +35,7 @@ export default function ExperienceCard({
       : logoSrc;
 
   return (
-    <div
-      className="    
-      w-full
-      py-4 px-2 
-      md:px-4
-      shadow-[0px_-1px_0px_rgba(0,0,0,0.035),0px_1px_0px_rgba(0,0,0,0.035)]
-      rounded-lg
-     "
-    >
+    <div className="w-full py-4 px-4 bg-white border border-gray-200">
       <div
         className="flex items-center justify-between cursor-pointer"
         onClick={() => setIsOpen((prev) => !prev)}
@@ -53,18 +45,16 @@ export default function ExperienceCard({
         </div>
 
         <div className="flex-1 mx-4">
-          <div className="poppins-semibold text-dark-navy text-sm md:text-md lg:text-lg">
+          <div className="font-semibold text-primary-navy text-sm md:text-base">
             {companyName}
           </div>
-          <div className="text-gray-600 text-sm">{title}</div>
+          <div className="text-text-secondary text-xs md:text-sm">{title}</div>
         </div>
 
-        <div className="flex items-center space-x-1 text-gray-600 text-sm">
-          <span>{startDate}</span>
+        <div className="flex items-center space-x-2 text-text-secondary text-xs md:text-sm">
+          <span className="hidden sm:inline">{startDate}</span>
           <svg
-            className={`w-4 h-4 transition-transform duration-200 ${
-              isOpen ? "transform rotate-180" : ""
-            }`}
+            className={`w-4 h-4 ${isOpen ? "transform rotate-180" : ""}`}
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -79,16 +69,11 @@ export default function ExperienceCard({
         </div>
       </div>
 
-      <div
-        className={`
-          mt-3 px-4 md:px-6 
-          overflow-hidden 
-          transition-[max-height] duration-300 ease-in-out
-          ${isOpen ? "max-h-[500px]" : "max-h-0"}
-        `}
-      >
-        <p className="text-gray-700 text-sm leading-relaxed">{description}</p>
-      </div>
+      {isOpen && description && (
+        <div className="mt-4 px-4 md:px-6">
+          <p className="text-text-secondary text-sm leading-relaxed">{description}</p>
+        </div>
+      )}
     </div>
   );
 }

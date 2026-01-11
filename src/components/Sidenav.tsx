@@ -1,123 +1,104 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Image from "next/image";
 
-function formatSlug(slug: string) {
-  return slug
-    .split("-")
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(" ");
-}
+const navItems = [
+  { label: "Home", href: "/", icon: "→" },
+  { label: "About", href: "/#about", icon: "→" },
+  { label: "Projects", href: "/#projects", icon: "→" },
+  { label: "Skills", href: "/#skills", icon: "→" },
+  { label: "Contact", href: "/#contact", icon: "→" },
+];
 
-const Sidenav = () => {
-  const [isOpen, setIsOpen] = useState(false);
+export default function Sidenav() {
   const pathname = usePathname();
 
-  const links = [
-    { href: "/", label: "About" },
-    { href: "/pages/projects", label: "Projects" },
-  ];
-
   return (
-    <>
-      {/* mobile view */}
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className={`fixed top-1/2 left-0 z-50 md:hidden p-2 bg-primary-gold text-white rounded-r-md transform -translate-y-1/2 transition-transform duration-300 ease-in-out ${
-          isOpen ? "translate-x-64" : "translate-x-0"
-        }`}
-        aria-label="Toggle sidenav"
-      >
-        {isOpen ? (
-          <Image
-            src="/sidenav-left.svg"
-            alt="sidenav-left"
-            width={24}
-            height={24}
-          />
-        ) : (
-          <Image
-            src="/sidenav-right.svg"
-            alt="sidenav-right"
-            width={24}
-            height={24}
-          />
-        )}
-      </button>
-
-      <aside
-        className={`fixed top-20 left-0 h-[calc(100vh-5rem)] w-64 bg-white border-r border-primary-grey z-40 transform ${
-          isOpen ? "translate-x-0" : "-translate-x-full"
-        } md:translate-x-0 transition-transform duration-300 ease-in-out`}
-      >
-        <div className="p-4 h-full">
-          <h2 className="poppins-regular text-medium-blue  tracking-regular mb-1 border-b-1 pb-1 border-primary-grey">
-            Choose a category
-          </h2>
-          <nav>
-            <ul>
-              {links.map((link) => {
-                const isActive =
-                  link.href === "/"
-                    ? pathname === link.href
-                    : pathname.startsWith(link.href);
-                const isProjectSlugPage =
-                  link.href === "/pages/projects" &&
-                  pathname.startsWith("/pages/projects/") &&
-                  pathname !== "/pages/projects";
-                const projectSlug = isProjectSlugPage
-                  ? pathname.split("/").pop()!
-                  : "";
-
-                return (
-                  <li key={link.href}>
-                    <Link
-                      href={link.href}
-                      className={`block py-1 transition duration-200 text-sm tracking-tight hover:text-black ${
-                        isActive
-                          ? "font-semibold text-primary-navy"
-                          : "font-regular text-primary-grey"
-                      }`}
-                    >
-                      {link.label}
-                    </Link>
-                    {isProjectSlugPage && (
-                      <ul className="pl-4 mt-1">
-                        <li>
-                          <Link
-                            href={pathname}
-                            className="py-1 text-sm text-primary-grey font-semibold flex items-center"
-                          >
-                            <svg
-                              className="w-3 h-3 mr-1"
-                              fill="none"
-                              stroke="currentColor"
-                              viewBox="0 0 24 24"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M9 5l7 7-7 7"
-                              />
-                            </svg>
-                            {formatSlug(projectSlug)}
-                          </Link>
-                        </li>
-                      </ul>
-                    )}
-                  </li>
-                );
-              })}
-            </ul>
-          </nav>
+    <aside className="hidden lg:flex lg:fixed lg:inset-y-0 lg:left-0 lg:w-[280px] lg:border-r border-divider bg-white flex-col justify-between">
+      {/* Top Section */}
+      <div className="pt-10 px-8">
+        <div className="mb-12">
+          <h1 className="text-sm font-bold tracking-widest uppercase text-primary-navy">
+            ATHARVA KHARWADKAR
+          </h1>
         </div>
-      </aside>
-    </>
-  );
-};
 
-export default Sidenav;
+        {/* Navigation List */}
+        <nav>
+          <ul className="space-y-3">
+            {navItems.map((item) => {
+              const isActive =
+                item.href === "/"
+                  ? pathname === "/"
+                  : pathname.startsWith(item.href);
+              return (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className={`flex items-center justify-between h-12 px-4 ${
+                      isActive
+                        ? "font-bold text-primary-navy border-l-2 border-primary-navy -ml-[2px]"
+                        : "font-normal text-text-secondary"
+                    }`}
+                  >
+                    <span>{item.label}</span>
+                    <span className="text-primary-grey">{item.icon}</span>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
+      </div>
+
+      {/* Bottom Utility Block */}
+      <div className="pb-10 px-8 space-y-6">
+        <div className="space-y-4">
+          {/* Availability Status */}
+          <div className="flex items-center space-x-2">
+            <span className="inline-block w-2 h-2 bg-green"></span>
+            <span className="text-xs text-text-secondary">
+              Available for Work
+            </span>
+          </div>
+
+          {/* View Resume Link */}
+          <Link
+            href="/pages/resume-view"
+            className="block text-sm text-primary-navy underline"
+          >
+            View Resume →
+          </Link>
+
+          {/* Contact prompt */}
+          <p className="text-xs text-text-secondary leading-relaxed">
+            Have a project in mind? Let&apos;s chat
+          </p>
+
+          <Link
+            href="/#contact"
+            className="block text-sm text-primary-navy underline"
+          >
+            Contact →
+          </Link>
+        </div>
+
+        {/* Social Link */}
+        <div className="pt-4">
+          <a
+            href="https://www.linkedin.com/in/atharvakharwadkar/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center w-10 h-10 border border-primary-grey text-primary-navy"
+            aria-label="LinkedIn"
+          >
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </aside>
+  );
+}

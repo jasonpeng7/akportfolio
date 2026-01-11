@@ -9,20 +9,23 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ slug, name, imageUrl }) => {
   return (
-    <Link href={`/pages/projects/${slug}`}>
-      <div className="max-w-[75px] max-h-[75px] group block ">
-        <div className=" w-full overflow-hidden">
+    <Link href={`/pages/projects/${slug}`} className="group block">
+      <div className="space-y-4">
+        {/* Image */}
+        <div className="relative w-full aspect-square bg-gray-100 overflow-hidden">
           <Image
             src={imageUrl}
             alt={name}
-            width={50}
-            height={50}
-            className="h-full w-full object-cover object-center aspect-square border border-primary-grey"
+            width={400}
+            height={400}
+            className="object-cover w-full h-full"
           />
         </div>
-        <p className="mt-2 block poppins-regular text-xs text-center font-medium text-primary-grey">
+
+        {/* Title */}
+        <h3 className="text-sm font-bold uppercase tracking-wide text-primary-navy">
           {name}
-        </p>
+        </h3>
       </div>
     </Link>
   );
