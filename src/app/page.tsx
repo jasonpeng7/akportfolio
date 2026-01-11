@@ -69,6 +69,12 @@ export default function Home() {
                 >
                   View Resume →
                 </Link>
+                <Link
+                  href="/pages/portfolio-view"
+                  className="text-base text-primary-navy underline"
+                >
+                  View Portfolio →
+                </Link>
               </div>
             </div>
           </div>

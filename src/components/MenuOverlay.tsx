@@ -87,6 +87,15 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
             View Resume →
           </Link>
 
+          {/* Portfolio Link */}
+          <Link
+            href="/pages/portfolio-view"
+            onClick={onClose}
+            className="block text-sm text-primary-navy underline"
+          >
+            View Portfolio →
+          </Link>
+
           {/* Social Link */}
           <div>
             <a
