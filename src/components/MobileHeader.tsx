@@ -1,7 +1,5 @@
 "use client";
 
-import { useState } from "react";
-
 interface MobileHeaderProps {
   onMenuOpen: () => void;
 }
@@ -20,7 +18,9 @@ export default function MobileHeader({ onMenuOpen }: MobileHeaderProps) {
       <div className="flex items-center space-x-4">
         <div className="hidden sm:flex items-center space-x-2">
           <span className="inline-block w-2 h-2 bg-green"></span>
-          <span className="text-xs text-text-secondary uppercase">Open to New Opportunities</span>
+          <span className="text-xs text-text-secondary uppercase">
+            Open to New Opportunities
+          </span>
         </div>
 
         <button
@@ -35,4 +35,3 @@ export default function MobileHeader({ onMenuOpen }: MobileHeaderProps) {
     </header>
   );
 }
-
