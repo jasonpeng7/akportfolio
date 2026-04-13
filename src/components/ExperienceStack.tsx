@@ -19,7 +19,7 @@ export default function ExperienceList() {
     },
     {
       logoSrc: "/arms_lab.png",
-      companyName: "ARMS Lab UC Davis",
+      companyName: "Advanced Research for Manufacturing Systems Lab",
       title: "Research Assistant",
       startDate: "September 2024 - Present",
       description:
