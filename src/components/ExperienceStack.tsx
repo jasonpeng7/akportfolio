@@ -4,32 +4,32 @@ import ExperienceCard from "@/components/features/ExperienceCard";
 export default function ExperienceList() {
   const experiences = [
     {
-      logoSrc: "/duen_arty.png",
-      companyName: "Davis Undergraduate Engineering Network",
-      title: "Mechanical Lead",
-      startDate: "September 2025 - Present",
-      description: "",
+      logoSrc: "/erl.png",
+      companyName: "Energy Research Lab",
+      title: "Research Assistant",
+      startDate: "January 2026 - Present",
+      description: "Engineered and tested high-precision hardware components to optimize reliability for hydrogen reforming and experimental rocket assembly research.",
     },
     {
       logoSrc: "/jcockerill.png",
       companyName: "John Cockerill",
       title: "Engineering Intern",
       startDate: "June 2025 - September 2025",
-      description: "Developed an Automated Proposal Tool",
+      description: "Developed an Automated Proposal Tool consolidating engineering data into proposals, and significantly reducing quote lead times.",
     },
     {
       logoSrc: "/arms_lab.png",
       companyName: "ARMS Lab UC Davis",
-      title: "Undergraduate Research Assistant",
+      title: "Research Assistant",
       startDate: "September 2024 - Present",
       description:
-        "Acquiring and applying manufacturing expertise in support of Graduate research projects using CNC machines and Computer-Aided Manufacturing (CAM). Currently also working on an AI powered PMI/3D-CAD automation tool for generating useful models using worded prompts to accelerate design processes.",
+        "Currently working on an AI powered PMI/3D-CAD automation tool for generating useful models using worded prompts to accelerate design processes. Also acquired and applied manufacturing expertise in support of Graduate research projects using CNC machines and Computer-Aided Manufacturing (CAM).",
     },
     {
       logoSrc: "/frucd.png",
       companyName: "Formula Racing at UC Davis",
       title: "Powertrain Engineer",
-      startDate: "September 2023 - Present",
+      startDate: "September 2023 - December 2025",
       description:
         "Team based practice on various design and manufacturing techniques in the development of an electric vehicle for racing.",
     },
