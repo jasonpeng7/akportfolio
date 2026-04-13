@@ -33,7 +33,7 @@ export default function ResumeView() {
             </div>
             <div className="flex items-center gap-4">
               <Link
-                href="/resume.docx"
+                href="/resume.pdf"
                 download
                 className="text-sm text-primary-navy underline"
               >
