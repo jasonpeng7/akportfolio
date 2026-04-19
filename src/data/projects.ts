@@ -36,7 +36,7 @@ export const allProjects = [
     description: [
       {
         title: "My Favorite Mechanism",
-        text: "For me, producing the rack and pinion tray dispenser was most interesting. It required a thorough analysis of the interaction between the teeth of the gear and the teeth attached to the tray. This included inspecting the geometry of each, and the ability for the material to withstand the torque provided by the motor.",
+        text: "For me, producing the rack and pinion tray dispenser was most interesting. It required a thorough analysis of the interaction between the teeth of the gear and the teeth attached to the tray. This included inspecting the geometry of each, and the ability for the PLA material to withstand the torque provided by the motor. This mechanism works through a DC motor attached to a custom 3D-printed gear placed at the exact coordinates that would cause it to fully interact with the gear teeth of the tray, driving it forwards or backwards as necessary. It's simple, but that's why I love it.",
       },
       {
         title: "Ease of Use",
