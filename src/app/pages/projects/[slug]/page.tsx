@@ -131,26 +131,39 @@ export default function ProjectPartPage() {
                 </p>
               </div>
             )}
-
-            {/* PDF Downloads */}
+            
+            {/* PDF Downloads & External Links */}
             {pdfResources.length > 0 && (
               <div className="mb-12 max-w-[860px]">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {pdfResources.map((resource, idx) => (
-                    <a
-                      key={idx}
-                      href={`/${resource.url.replace(/^\//, "")}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-center px-4 py-4 bg-white border border-gray-200 text-primary-navy underline"
-                    >
-                      <span className="text-sm font-medium">{resource.name}</span>
-                    </a>
-                  ))}
+                  {pdfResources.map((resource, idx) => {
+                    // 1. Clean the URL and check if it's external
+                    const cleanUrl = resource.url.trim();
+                    const isExternal = cleanUrl.startsWith("http");
+            
+                    // 2. Decide the final href
+                    // If external, use it as is. If local, ensure it has a leading slash.
+                    const finalHref = isExternal 
+                      ? cleanUrl 
+                      : `/${cleanUrl.replace(/^\//, "")}`;
+            
+                    return (
+                      <a
+                        key={idx}
+                        href={finalHref}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center px-4 py-4 bg-white border border-gray-200 text-primary-navy underline hover:bg-gray-50 transition-colors"
+                      >
+                        <span className="text-sm font-medium">{resource.name}</span>
+                        {/* Optional: Add an icon if it's a video */}
+                        {isExternal && <span className="ml-2 text-xs">↗</span>}
+                      </a>
+                    );
+                  })}
                 </div>
               </div>
             )}
-
             {/* Description / Key Highlights */}
             <div className="mb-20 max-w-[860px]">
               <h3 className="text-xs font-semibold tracking-widest uppercase text-text-secondary mb-8 border-l-2 border-primary-gold pl-4">
