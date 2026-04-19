@@ -35,7 +35,7 @@ export const allProjects = [
       "Development of a mechanically complex, computer vision–enabled arcade system integrating precision mechanisms, embedded hardware, and optimized prototyping workflows.",
     description: [
       {
-        title: "Mechanical Design (Lead)",
+        title: "Mechanical Design",
         text: "Led mechanical design of a portable tabling machine, including chassis layout, access panels, and internal mounting for electronics. Designed for easy transport, maintenance access, and reliable assembly.",
       },
       {
@@ -55,7 +55,7 @@ export const allProjects = [
         text: "Worked closely with electrical and software teams to integrate motors, wiring paths, camera placement, and emergency shutoff features. Supported mechanical troubleshooting during system testing and demos.",
       },
     ],
-    slug: "duen-fall-2025-cohort-project",
+    slug: "computer-vision-arcade-machine",
     imageUrl: "/duen_arcade_machine.png",
     galleryImages: [
       "/duen_arcade_machine.png",
@@ -63,11 +63,9 @@ export const allProjects = [
       "/duen_arty_build.png",
     ],
     pdfUrl: [
-      {
-        name: "F25 Tabling Assistance Instruction Manual",
-        url: "duen_pdf1.pdf",
-      },
-      { name: "F25 Final Presentations", url: "duen_pdf2.pdf" },
+      {name: "Tabling Assistance Instruction Manual", url: "duen_pdf1.pdf"},
+      {name: "Final Presentation", url: "duen_pdf2.pdf"},
+      {name: "Video Demonstration", url: "https://youtu.be/xdVomQE3XOU" },
     ],
   },
   {
