@@ -35,6 +35,14 @@ export const allProjects = [
       "Development of a mechanically complex, computer vision–enabled arcade system integrating precision mechanisms, embedded hardware, and optimized prototyping workflows.",
     description: [
       {
+        title: "My Favorite Mechanism",
+        text: "For me, producing the rack and pinion tray dispenser was most interesting. It required a thorough analysis of the interaction between the teeth of the gear and the teeth attached to the tray. This included inspecting the geometry of each, and the ability for the material to withstand the torque provided by the motor.",
+      },
+      {
+        title: "Ease of Use",
+        text: "In terms of accessibility, creating the tray required an iterative design process to find an acceptable solution via rapid-prototyping. I also think it was smart to program the wheel to return to its proper starting position to minimize human intervention with the machine.",
+      },
+      {
         title: "Mechanical Design",
         text: "Led mechanical design of a portable tabling machine, including chassis layout, access panels, and internal mounting for electronics. Designed for easy transport, maintenance access, and reliable assembly.",
       },
