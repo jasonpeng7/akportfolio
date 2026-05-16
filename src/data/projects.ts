@@ -96,6 +96,9 @@ export const allProjects = [
       "/r2d2-design.png",
       "/r2d2-assembly.png",
     ],
+    pdfUrl: [
+      {name: "Video Demonstration", url: "https://youtube.com/shorts/yfv4Mfnj9k8?feature=share" },
+    ],
   },
   {
     name: "Hub Motor Project",
