@@ -79,7 +79,7 @@ export const allProjects = [
   {
     name: "Two-wheeled Self Balancing Robot",
     overview:
-      "Design and implementation of a signal conditioning system converting analog sensor data into calibrated digital outputs.",
+      "Design and implementation of a PID control system converting analog sensor data into calibrated digital information to be processed for actuator outputs.",
     description: [
       {
         title: "Calibration & Accuracy",
