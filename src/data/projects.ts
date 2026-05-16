@@ -77,6 +77,23 @@ export const allProjects = [
     ],
   },
   {
+    name: "Two-wheeled Self Balancing Robot",
+    overview:
+      "Design and implementation of a signal conditioning system converting analog sensor data into calibrated digital outputs.",
+    description: [
+      {
+        title: "Calibration & Accuracy",
+        text: "Developed a PID control algorithm in C++ using the Arduino IDE to maintain vertical stability for a two-wheeled balancing robot, achieving a minimized steady-state tilt error.",
+      },
+      {
+        title: "Hardware Design",
+        text: "Iterated through rapid prototyping cycles to design and assemble a custom chassis, integrating motor drivers and wireless telemetry to streamline the tuning of Proportional, Integral, and Derivative gains.",
+      },
+    ],
+    slug: "self-balance-robot",
+    imageUrl: "/r2d2.jpg",
+  },
+  {
     name: "Hub Motor Project",
     overview:
       "Design and simulation of a high-performance electric hub motor system emphasizing electromagnetic efficiency, manufacturability, and future control integration.",
@@ -149,27 +166,6 @@ export const allProjects = [
     imageUrl: "/precision-manufacturing.jpg",
   },
   {
-    name: "Signal Conditioning",
-    overview:
-      "Design and implementation of a signal conditioning system converting analog sensor data into calibrated digital outputs.",
-    description: [
-      {
-        title: "Circuit Design",
-        text: "Designed and assembled a precision signal conditioning circuit utilizing a Wheatstone Bridge and operational amplifiers.",
-      },
-      {
-        title: "Calibration & Accuracy",
-        text: "Calibrated the hardware assembly to map small analog voltage changes to a visible digital 7-segment LED output.",
-      },
-      {
-        title: "Embedded Logic",
-        text: "Implemented Boolean logic in Python on a Raspberry Pi to control and display conditioned sensor data.",
-      },
-    ],
-    slug: "signal-conditioning",
-    imageUrl: "/signal-conditioning.jpg",
-  },
-  {
     name: "Micro-Vu Precision Measurement",
     overview:
       "Execution of high-precision measurement and data analysis workflows supporting graduate-level Directed Energy Deposition research.",
@@ -191,9 +187,8 @@ export const allProjects = [
     imageUrl: "/microvu.jpg",
     galleryImages: ["/microvu-1.jpg"],
   },
-
   {
-    name: "FER2013 Machine Learning Coding Competition Attempt",
+    name: "FER2013 Machine Learning",
     overview:
       "Development and evaluation of a facial expression classification model with emphasis on preprocessing, diagnostics, and visualization.",
     description: [
