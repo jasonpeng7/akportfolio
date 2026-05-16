@@ -92,6 +92,10 @@ export const allProjects = [
     ],
     slug: "self-balance-robot",
     imageUrl: "/r2d2.jpg",
+    galleryImages: [
+      "/r2d2-design.png",
+      "/r2d2-assembly.png",
+    ],
   },
   {
     name: "Hub Motor Project",
