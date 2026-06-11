@@ -9,7 +9,7 @@ export default function ExperienceList() {
       title: "Research Assistant",
       startDate: "September 2024 - Present",
       description:
-        "Currently working on an AI powered PMI/3D-CAD automation tool for generating useful models using worded prompts to accelerate design processes. Also acquired and applied manufacturing expertise in support of Graduate research projects using CNC machines and Computer-Aided Manufacturing (CAM).",
+        "Currently working on an AI powered PMI/3D-CAD automation tool for generating useful inferences and models using worded prompts and STEP files to accelerate design for manufacturing processes.",
     },
     {
       logoSrc: "/erl.png",
