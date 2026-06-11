@@ -4,10 +4,18 @@ import ExperienceCard from "@/components/features/ExperienceCard";
 export default function ExperienceList() {
   const experiences = [
     {
+      logoSrc: "/arms_lab.png",
+      companyName: "Advanced Research for Manufacturing Systems Lab",
+      title: "Research Assistant",
+      startDate: "September 2024 - Present",
+      description:
+        "Currently working on an AI powered PMI/3D-CAD automation tool for generating useful models using worded prompts to accelerate design processes. Also acquired and applied manufacturing expertise in support of Graduate research projects using CNC machines and Computer-Aided Manufacturing (CAM).",
+    },
+    {
       logoSrc: "/erl.png",
       companyName: "Energy Research Lab",
       title: "Research Assistant",
-      startDate: "January 2026 - Present",
+      startDate: "January 2026 - June 2026",
       description: "Engineered and tested high-precision hardware components to optimize reliability for hydrogen reforming and experimental rocket assembly research.",
     },
     {
@@ -16,14 +24,6 @@ export default function ExperienceList() {
       title: "Engineering Intern",
       startDate: "June 2025 - September 2025",
       description: "Developed an Automated Proposal Tool consolidating engineering data into proposals, and significantly reducing quote lead times.",
-    },
-    {
-      logoSrc: "/arms_lab.png",
-      companyName: "Advanced Research for Manufacturing Systems Lab",
-      title: "Research Assistant",
-      startDate: "September 2024 - Present",
-      description:
-        "Currently working on an AI powered PMI/3D-CAD automation tool for generating useful models using worded prompts to accelerate design processes. Also acquired and applied manufacturing expertise in support of Graduate research projects using CNC machines and Computer-Aided Manufacturing (CAM).",
     },
     {
       logoSrc: "/frucd.png",
@@ -40,14 +40,6 @@ export default function ExperienceList() {
       startDate: "July 2022 – August 2022",
       description:
         "Shadowed the Design Engineers at the Carrier Shanghai R&D department, exposing me to the use of CAD, FEA, and Coding in their HVAC development process. I was also very lucky to access their testing lab where I learned of manufacturing and assembly processes.",
-    },
-    {
-      logoSrc: "/tech_mahindra.png",
-      companyName: "Tech Mahindra",
-      title: "Financial Analyst Intern",
-      startDate: "August 2022 – August 2022",
-      description:
-        "Worked as an intern on a project involving the analysis and rectification of large data samples with Python and Microsoft Excel.",
     },
   ];
 
