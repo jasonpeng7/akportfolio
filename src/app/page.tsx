@@ -47,7 +47,7 @@ export default function Home() {
             <div className="max-w-[860px]">
               <h1 className="text-3xl sm:text-5xl lg:text-[56px] leading-[1.2] text-primary-navy mb-12">
                 <span className="font-normal">
-                  3rd year Mechanical Engineer at UC Davis bridging{" "}
+                  4th year Mechanical Engineer at UC Davis bridging{" "}
                   <span className="font-bold">precision manufacturing</span>{" "}
                   with <span className="font-bold">ML-driven automation</span>{" "}
                   and controls to develop intelligent, high-performance
