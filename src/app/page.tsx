@@ -51,7 +51,7 @@ export default function Home() {
                   <span className="font-bold">precision manufacturing</span>{" "}
                   with <span className="font-bold">ML-driven automation</span>{" "}
                   and controls to develop intelligent, high-performance
-                  mechatronic systems. 
+                  manufacturing practices. 
                 </span>
               </h1>
 
