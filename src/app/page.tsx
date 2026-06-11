@@ -228,8 +228,7 @@ export default function Home() {
                   experience in CNC machining, CAD design, and research
                   applications. I aim to combine technical programming
                   capabilities with my manufacturing and hardware expertise to
-                  optimize processes and performance while meeting precise
-                  specifications.
+                  optimize design for manufacturing processes.
                 </p>
               </div>
             </div>
